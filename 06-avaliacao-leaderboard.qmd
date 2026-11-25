@@ -1,0 +1,17 @@
+---
+title: "Avaliação e Leaderboard de Modelos"
+---
+
+## Comparação Tabular Interativa (Estilo `formattable`)
+
+A tabela abaixo opera integralmente off-line com ordenação por coluna, filtro por tier e barras proporcionais em células:
+
+```{=html}
+<iframe
+  id="frame-formattable"
+  src="widgets/formattable_leaderboard.html"
+  title="Formattable Model Leaderboard"
+  style="width: 100%; min-height: 440px; border: 1px solid #323744; border-radius: 10px; background: #181a20; display: block;"
+  scrolling="no">
+</iframe>
+```

@@ -1,0 +1,28 @@
+---
+title: "predictive.factory"
+subtitle: "Documentação Técnica, Contratos de Dados e Guias Interativos"
+author: "João Batista Gonçalves de Brito"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+## Visão Geral
+
+Este portal reúne a documentação de referência da API e os guias conceituais interativos do projeto **predictive.factory**, projetado para modelagem supervisionada (classificação binária, multiclasse e regressão) com execução determinística e **100% off-line**.
+
+::: {.callout-note}
+## Execução em Ambiente Isolado (Off-line)
+
+Todos os componentes visuais, tabelas interativas, simuladores de árvores e validações de esquema neste projeto operam localmente sem acesso à internet. Basta renderizar o projeto com `quarto render` e abrir o diretório `_site/` localmente ou em servidor interno.
+:::
+
+---
+
+## Estrutura do Material
+
+- **Documentação da API (Roxygen):** Espaço reservado para os cabeçalhos técnicos das funções da fábrica (`01-api-reference.qmd`).
+- **Arquitetura e Contratos:** Validador interativo de JSON Schema e grafo DAG de prevenção de *data leakage*.
+- **Algoritmos e Métodos Interativos:** Simuladores visuais de reamostragem (`sbyadanear`), árvores de decisão (*SuperTree*), *Gradient Boosting Playground* e tabelas analíticas (*Formattable*).
+- **Capítulos em Branco:** Páginas pré-configuradas para expansão futura.

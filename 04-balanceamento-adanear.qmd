@@ -1,0 +1,35 @@
+---
+title: "Reamostragem Híbrida (ADASYN + NearMiss)"
+---
+
+## Visão Conceitual e Execução Vetorial
+
+Alterne entre as abas abaixo para explorar tanto o comportamento geométrico conceitual quanto o motor numérico AVX-512 (`fp64`) e Intel oneMKL `DGEMM` utilizado pelo pacote `sbyadanear`.
+
+::: {.panel-tabset}
+
+### Fluxo Conceitual (Fronteira e Tabela)
+
+```{=html}
+<iframe
+  id="frame-sby-conceptual"
+  src="widgets/sbyadanear_conceptual.html"
+  title="Fluxo Conceitual ADASYN e NearMiss"
+  style="width: 100%; min-height: 760px; border: 1px solid #323744; border-radius: 10px; background: #16213e; display: block;"
+  scrolling="no">
+</iframe>
+```
+
+### Motor Numérico AVX-512 e oneMKL
+
+```{=html}
+<iframe
+  id="frame-sby-avx512"
+  src="widgets/sbyadanear_avx512.html"
+  title="Motor Numerico AVX-512 e oneMKL"
+  style="width: 100%; min-height: 780px; border: 1px solid #323744; border-radius: 10px; background: #16213e; display: block;"
+  scrolling="no">
+</iframe>
+```
+
+:::

@@ -1,0 +1,74 @@
+project:
+  type: website
+  resources:
+    - widgets/*.html
+    - widgets/*.js
+    - images/*
+
+website:
+  title: "predictive.factory — Documentação Técnica e Guia Interativo"
+  favicon: images/favicon.png
+  navbar:
+    left:
+      - text: "Início"
+        href: index.qmd
+      - text: "Referência da API"
+        href: 01-api-reference.qmd
+    right:
+      - icon: download
+        menu:
+          - text: "Download PDF"
+            href: ebook_pdf.pdf
+  reader-mode: true
+  sidebar:
+    style: floating
+    search: true
+    logo: images/icon.png
+    pinned: true
+    contents:
+      - index.qmd
+      - section: "Documentação da API (Roxygen)"
+        contents:
+          - 01-api-reference.qmd
+      - section: "Arquitetura e Contratos"
+        contents:
+          - 02-contratos-json-schema.qmd
+          - 03-pipeline-fluxo-dados.qmd
+      - section: "Algoritmos e Métodos Interativos"
+        contents:
+          - 04-balanceamento-adanear.qmd
+          - 05-arvores-supertree-boosting.qmd
+          - 06-avaliacao-leaderboard.qmd
+      - section: "Capítulos em Branco (Expansão)"
+        contents:
+          - 07-capitulo-modelo-a.qmd
+          - 08-capitulo-modelo-b.qmd
+          - 09-capitulo-modelo-c.qmd
+      - 99-referencias.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: cyborg
+    respect-user-color-scheme: true
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    html-math-method: plain
+    include-after-body:
+      - text: |
+          <script src="widgets/iframe-resize.js"></script>
+
+lang: pt-BR
+
+bibliography: referencias.bib
+suppress-bibliography: true
+link-citations: true
+
+execute:
+  eval: false
+  echo: true
+  warning: false
+  message: false
+  include: true

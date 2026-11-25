@@ -1,0 +1,17 @@
+---
+title: "Contratos de Dados e JSON Schema"
+---
+
+## Validação Estrutural Off-line
+
+A fábrica valida contratos de entrada antes da alocação de memória ou execução de pipelines. Utilize o validador interativo abaixo para testar cenários válidos e violações de contrato.
+
+```{=html}
+<iframe
+  id="frame-contract-dag"
+  src="widgets/contract_pipeline.html"
+  title="Validador Interativo de JSON Schema"
+  style="width: 100%; min-height: 430px; border: 1px solid #323744; border-radius: 10px; background: #181a20; display: block;"
+  scrolling="no">
+</iframe>
+```

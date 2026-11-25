@@ -1,0 +1,10 @@
+---
+title: "Referências"
+suppress-bibliography: false
+link-citations: false
+nocite: |
+  @*
+---
+
+::: {#refs}
+:::

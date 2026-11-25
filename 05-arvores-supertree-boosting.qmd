@@ -1,0 +1,37 @@
+---
+title: "Árvores de Decisão e Gradient Boosting"
+---
+
+## Inspeção Estrutural e Aprendizado Aditivo
+
+::: {.panel-tabset}
+
+### Gradient Boosting Playground
+
+Explore o efeito da profundidade da árvore, taxa de aprendizado, subamostragem e atualização de Newton-Raphson na construção aditiva da fronteira de decisão:
+
+```{=html}
+<iframe
+  id="frame-gb-playground"
+  src="widgets/gb_playground.html"
+  title="Gradient Boosting Playground"
+  style="width: 100%; min-height: 610px; border: 1px solid #323744; border-radius: 10px; background: #181a20; display: block;"
+  scrolling="no">
+</iframe>
+```
+
+### SuperTree (Distribuição por Nó)
+
+Inspecione a partição de amostras em cada nó, os limiares de corte e exporte a árvore diretamente em SVG vetorial:
+
+```{=html}
+<iframe
+  id="frame-supertree"
+  src="widgets/supertree_inspector.html"
+  title="SuperTree Interactive Inspector"
+  style="width: 100%; min-height: 580px; border: 1px solid #323744; border-radius: 10px; background: #181a20; display: block;"
+  scrolling="no">
+</iframe>
+```
+
+:::

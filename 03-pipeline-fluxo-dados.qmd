@@ -1,0 +1,34 @@
+---
+title: "Pipeline de Machine Learning e Observable JS"
+---
+
+## Fluxo de Execução e Particionamento
+
+::: {.panel-tabset}
+
+### Arquitetura em Etapas
+
+1. **Validação de Contrato:** Verificação de esquema, tipos e ausência de vazamento temporal.
+2. **Particionamento Estratificado:** Separação treino/validação antes de qualquer ajuste estatístico.
+3. **Pré-processamento In-Fold:** Escalonamento e balanceamento ajustados apenas na dobra de treino.
+4. **Otimização e Ajuste:** Busca de hiperparâmetros e ajuste do modelo vencedor.
+5. **Empacotamento:** Serialização de artefatos congelados para inferência.
+
+### Exemplo Observable JS (Off-line)
+
+O bloco `ojs` abaixo executa diretamente no navegador usando o runtime local embutido pelo Quarto, sem chamadas externas:
+
+```{ojs}
+viewof nFolds = Inputs.range([2, 10], {value: 5, step: 1, label: "Número de dobras (K-Fold):"})
+viewof sampleSize = Inputs.range([1000, 50000], {value: 10000, step: 1000, label: "Total de registros (N):"})
+
+foldMetrics = Array.from({length: nFolds}, (_, i) => ({
+  dobra: `Fold ${i + 1}`,
+  treino: Math.round(sampleSize * (nFolds - 1) / nFolds),
+  validacao: Math.round(sampleSize / nFolds)
+}))
+
+Inputs.table(foldMetrics)
+```
+
+:::

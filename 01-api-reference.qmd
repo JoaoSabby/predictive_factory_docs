@@ -1,0 +1,31 @@
+---
+title: "Referência da API (Cabeçalhos Roxygen)"
+---
+
+## Visão Geral das Funções
+
+::: {.callout-tip}
+## Espaço Reservado para Documentação Gerada
+
+Insira nesta página os blocos de documentação gerados a partir dos cabeçalhos `roxygen2` das funções do pacote **predictive.factory**.
+:::
+
+---
+
+## Funções Principais
+
+### `PredictiveFactoryRun()`
+
+*(Inserir documentação de cabeçalho aqui)*
+
+---
+
+### `PredictiveFactoryValidateContract()`
+
+*(Inserir documentação de cabeçalho aqui)*
+
+---
+
+### `PredictiveFactoryTune()`
+
+*(Inserir documentação de cabeçalho aqui)*
